@@ -1,0 +1,24 @@
+@function remCha ($num){
+  @return round(($num/(750/320*20))*1000000)/1000000+rem;
+  //750 设计图的宽度
+  //1000000 保留6位小数（四舍五入）
+  //$num 设计图元素的尺寸
+}
+@function fremCha ($num){
+  @return round(-($num/(750/320*20))*1000000)/1000000+rem;
+  //750 设计图的宽度
+  //1000000 保留6位小数（四舍五入）
+  //$num 设计图元素的尺寸
+}
+.loading,.loadingNo {
+  padding: .3rem 0;
+  text-align: center;
+  color: #999;
+  font-size: 14px;
+  .a{
+    font-size:  .5rem;
+    .b{
+      color: #f00;
+    }
+  }
+}
